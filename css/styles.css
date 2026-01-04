@@ -750,8 +750,9 @@ header .container {
 /* Text Logo Styling */
 .logo {
     display: flex;
-    flex-direction: column;
-    gap: 0;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .logo-name {
@@ -759,13 +760,18 @@ header .container {
     font-weight: 700;
     color: var(--white);
     letter-spacing: -0.5px;
-    line-height: 1.2;
+}
+
+.logo-separator {
+    color: var(--accent);
+    font-weight: 300;
+    font-size: 1.5rem;
 }
 
 .logo-title {
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: var(--accent);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--gray-300);
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
