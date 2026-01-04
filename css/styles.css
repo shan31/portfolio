@@ -206,9 +206,16 @@ header .container {
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: var(--gray-400);
     margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .social-links {
@@ -481,7 +488,7 @@ footer {
 .hero-image img {
     max-width: 100%;
     height: auto;
-    filter: drop-shadow(0 0 20px rgba(0, 255, 102, 0.2));
+    filter: drop-shadow(0 0 30px var(--accent-glow));
     animation: float 6s ease-in-out infinite;
 }
 
