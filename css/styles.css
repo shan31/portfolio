@@ -418,6 +418,13 @@ header .container {
     font-size: 1.2rem;
 }
 
+/* Contact Form Placeholder Color */
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+    color: var(--gray-400);
+    opacity: 1;
+}
+
 /* Footer */
 footer {
     padding: 2rem 0;
