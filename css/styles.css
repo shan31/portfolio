@@ -425,6 +425,12 @@ header .container {
     opacity: 1;
 }
 
+/* Contact Form Input Text Color (when typing) */
+#contact-form input,
+#contact-form textarea {
+    color: var(--accent);
+}
+
 /* Footer */
 footer {
     padding: 2rem 0;
