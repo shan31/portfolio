@@ -1,8 +1,8 @@
 :root {
-    /* Colors - White & Navy Theme */
+    /* Colors - White & Navy Theme with Warm Orange Accent */
     --bg-primary: #ffffff;
-    --bg-secondary: #f8f9fa;
-    --bg-tertiary: #eff2f7;
+    --bg-secondary: #fff7ed;
+    --bg-tertiary: #ffedd5;
     --white: #0a2540;
     /* Primary Text (Deep Navy) */
     --gray-100: #334e68;
@@ -10,10 +10,10 @@
     --gray-400: #627d98;
     --text-muted: #486581;
     /* Slate Blue */
-    --accent: #007bff;
-    /* Electric Blue */
-    --accent-dark: #0056b3;
-    --accent-glow: rgba(0, 123, 255, 0.2);
+    --accent: #F97316;
+    /* Warm Orange */
+    --accent-dark: #EA580C;
+    --accent-glow: rgba(249, 115, 22, 0.2);
 
     /* Fonts */
     --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
