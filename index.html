@@ -4,20 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Scientist & ML Engineer Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/png" href="assets/favicon-v2.png">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Shanmugam | Data Scientist & ML Engineer</title>
+
+    <!-- Google Fonts: Poppins (Headings) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <!-- EmailJS SDK -->
+    <link rel="icon" type="image/png" href="assets/favicon-v2.png">
+
+    <!-- EmailJS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
-            // https://dashboard.emailjs.com/admin/account
             emailjs.init("feCnS6jlwEJhlWtDm");
         })();
     </script>
@@ -26,250 +35,253 @@
 <body>
 
     <!-- Header -->
-    <header>
-        <div class="container">
-            <a href="#" class="logo">
-                <span class="logo-name">Shanmugam</span>
-                <span class="logo-separator">|</span>
-                <span class="logo-title">Data Scientist</span>
-            </a>
-            <div class="header-right">
-                <nav>
-                    <ul class="nav-links">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                    </ul>
-                </nav>
-                <a href="#contact" class="btn btn-sm">Get in Touch</a>
-            </div>
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">Shanmugam</a>
 
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                </ul>
+            </nav>
+
+            <a href="#contact" class="btn btn-primary">Contact</a>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="stripes">
-            <div class="stripe"></div>
-            <div class="stripe"></div>
-        </div>
         <div class="container hero-container">
             <div class="hero-content">
-                <p class="greeting">Hello, I'm Shanmugam</p>
-                <h1>I am a <span class="txt-type" data-wait="3000"
-                        data-words='["Data Scientist", "ML Engineer", "Problem Solver"]'></span></h1>
-                <p class="hero-subtitle">Solving complex problems with data, machine learning, and advanced analytics.
-                    Transforming raw information into actionable insights for business growth.</p>
-
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Projects</a>
+                <h1 class="hero-title">
+                    Shanmugam - Data Scientist & ML Engineer
+                </h1>
+                <p class="hero-subtitle">
+                    Solving complex problems with data, machine learning, and advanced analytics. Transforming raw
+                    information into actionable insights.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
                     <a href="assets/Shanmugam_M.pdf" target="_blank" class="btn btn-outline">Download CV</a>
                 </div>
-
-                <div class="social-links">
-                    <a href="https://github.com/shan31" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/shanmugam31" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                </div>
             </div>
-            <div class="hero-image">
-                <div class="img-frame">
-                    <img src="assets/profile.jpg" alt="Shanmugam - Data Scientist">
-                </div>
+            <div class="hero-image-wrapper">
+                <img src="assets/profile.jpg" alt="Shanmugam" class="hero-image">
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    </section>
+
+    <!-- Partners Strip -->
+    <div class="partners-strip">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <h3>From Web Scalability to <span class="text-accent">Data Intelligence</span></h3>
-                    <br>
-                    <p>I am a results-driven Data Scientist and Machine Learning Engineer with a strong foundation in
-                        Python, statistical modeling, and end-to-end ML system development. My professional journey has
-                        evolved from building scalable web applications to designing and deploying data-driven solutions
-                        that solve real-world problems.</p>
-                    <p>This transition has enabled me to develop a deep understanding of the complete machine learning
-                        lifecycle—ranging from data ingestion and feature engineering to model training, evaluation,
-                        deployment, and monitoring in production environments.</p>
-                    <p>My long-term goal is to work on impactful AI systems that move beyond experimentation and into
-                        production—systems that are explainable, maintainable, and aligned with business outcomes.</p>
+            <div class="partner-logos">
+                <div class="tech-item"><i class="fab fa-python"></i> Python</div>
+                <div class="tech-item"><i class="fas fa-database"></i> SQL</div>
+                <div class="tech-item"><i class="fab fa-microsoft"></i> Azure</div>
+                <div class="tech-item"><i class="fab fa-docker"></i> Docker</div>
+                <div class="tech-item"><i class="fas fa-robot"></i> LangChain</div>
+            </div>
+        </div>
+    </div>
 
+    <!-- About Section ("We are experts" style) -->
+    <section id="about" class="section bg-light">
+        <div class="container about-container">
+            <div class="about-content">
+                <span class="section-label">About Me</span>
+                <h2 class="text-left">From Web Scalability to Data Intelligence</h2>
+                <p>I am a results-driven Data Scientist and Machine Learning Engineer with a strong foundation in
+                    Python, statistical modeling, and end-to-end ML system development.</p>
+                <p>My professional journey has evolved from building scalable web applications to designing and
+                    deploying data-driven solutions that solve real-world problems. This transition has enabled me to
+                    develop a deep understanding of the complete machine learning lifecycle.</p>
 
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">7+</span>
+                        <span class="stat-label">Years Exp</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-cards">
+                <!-- Feature 1 -->
+                <div class="feature-row">
+                    <div class="feature-icon icon-blue"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="feature-text">
+                        <h4>MCA Graduate</h4>
+                        <p>Dr.G.R.Damodaran College of Science (2014)</p>
+                    </div>
+                </div>
+                <!-- Feature 2 -->
+                <div class="feature-row">
+                    <div class="feature-icon icon-green"><i class="fas fa-briefcase"></i></div>
+                    <div class="feature-text">
+                        <h4>Technical Lead</h4>
+                        <p>Driving key initiatives and architectural decisions.</p>
+                    </div>
+                </div>
+                <!-- Feature 3 -->
+                <div class="feature-row">
+                    <div class="feature-icon icon-yellow"><i class="fas fa-lightbulb"></i></div>
+                    <div class="feature-text">
+                        <h4>Problem Solver</h4>
+                        <p>Translating business needs into technical solutions.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education">
+    <section id="skills" class="section">
         <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-grid">
-                <div class="edu-card">
-                    <h3 class="edu-degree">Master’s Degree in Master of Computer Applications</h3>
-                    <span class="edu-school">Dr.G.R.Damodaran College of Science</span>
-                    <span class="edu-year">January 2011 - December 2014</span>
-                    <p style="margin-top: 1rem; color: var(--gray-400);">Advanced studies in computer applications and
-                        software development.</p>
-                </div>
-                <div class="edu-card">
-                    <h3 class="edu-degree">Bachelor's degree in Computer Applications</h3>
-                    <span class="edu-school">Hindusthan College Of Arts And Science</span>
-                    <span class="edu-year">June 2008 - May 2011</span>
-                    <p style="margin-top: 1rem; color: var(--gray-400);">Foundation in computer science and programming.
-                    </p>
-                </div>
+            <div class="section-header text-center">
+                <span class="section-label">My Skills</span>
+                <h2 class="section-title">Choose Your Expertise</h2>
+                <p class="section-desc">Solving complex problems with cutting edge data science and engineering.</p>
             </div>
-        </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="expertise">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
+
+
             <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fas fa-brain skill-icon"></i>
-                    <h3 class="skill-title">Machine Learning</h3>
-                    <p class="skill-desc">Specializing in <strong>Demand Forecasting</strong> using <strong>Prophet &
-                            XGBoost</strong>, and predictive maintenance systems.</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-cogs skill-icon"></i>
-                    <h3 class="skill-title">MLOps</h3>
-                    <p class="skill-desc">Deploying scalable models on <strong>Azure ML & AKS</strong> using
-                        <strong>Docker</strong> and <strong>GitHub Actions</strong>.
+                <!-- Card 1: ML -->
+                <div class="skill-card" style="position: relative;">
+                    <div class="dot-pattern dot-top-right"></div>
+                    <div class="icon-circle icon-blue">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Machine Learning</h3>
+                    <p>Specializing in Demand Forecasting using Prophet & XGBoost, and predictive maintenance systems.
                     </p>
+
                 </div>
 
+                <!-- Card 2: MLOps -->
                 <div class="skill-card">
-                    <i class="fas fa-robot skill-icon"></i>
-                    <h3 class="skill-title">Generative AI</h3>
-                    <p class="skill-desc">Building <strong>RAG systems</strong> and intelligent agents using
-                        <strong>Azure OpenAI, LangChain</strong>, and GPT-4.
-                    </p>
+                    <div class="icon-circle icon-red">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>MLOps</h3>
+                    <p>Deploying scalable models on Azure ML & AKS using Docker and GitHub Actions workflows.</p>
+
                 </div>
 
+                <!-- Card 3: GenAI -->
                 <div class="skill-card">
-                    <i class="fas fa-code skill-icon"></i>
-                    <h3 class="skill-title">Web & Engineering</h3>
-                    <p class="skill-desc">7+ years experience (4 in Web) building robust UIs and APIs, ensuring seamless
-                        model integration.</p>
+                    <div class="icon-circle icon-green">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Generative AI</h3>
+                    <p>Building RAG systems and intelligent agents using Azure OpenAI and LangChain.</p>
+
+                </div>
+
+                <!-- Card 4: Web Eng -->
+                <div class="skill-card">
+                    <div class="icon-circle icon-yellow">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Engineering</h3>
+                    <p>7+ years experience building robust UIs and APIs, ensuring seamless model integration.</p>
+
                 </div>
             </div>
         </div>
     </section>
+
+
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <div class="section-header text-center">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-desc">Real-world solutions solving complex business problems.</p>
+            </div>
+
+            <!-- Filter Buttons (Optional) -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+                <button class="filter-btn" data-filter="genai">GenAI</button>
+            </div>
+
             <div class="projects-grid">
-                <div class="project-card">
-                    <img src="assets/project-forecasting.png" alt="Demand Forecasting Dashboard" class="project-img">
-                    <div class="project-content">
+                <!-- Project 1 -->
+                <!-- Project 1 -->
+                <div class="project-card" data-category="machine-learning">
+                    <div class="project-header">
+                        <div class="icon-circle icon-green small-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <span class="project-date">Jan 18, 2024</span>
+                    </div>
+                    <div class="project-body">
                         <h3>Spare Part Demand Forecasting</h3>
                         <p>Forecasting engine for spare part demand across 500+ service centers using Prophet and
                             XGBoost.</p>
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>Azure ML</span>
-                            <span>Prophet</span>
-                        </div>
-                        <a href="#" class="btn btn-outline btn-sm">View Case Study</a>
+                        <a href="https://spare-part-demand-forecasting-wmhwq2gu8pjmgz8ad6kwwv.streamlit.app/"
+                            class="card-link" target="_blank">Click here to see project <i
+                                class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="project-card">
-                    <img src="assets/project-rag.png" alt="HR Search RAG" class="project-img">
-                    <div class="project-content">
+
+                <!-- Project 2 -->
+                <!-- Project 2 -->
+                <div class="project-card" data-category="genai">
+                    <div class="project-header">
+                        <div class="icon-circle icon-blue small-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <span class="project-date">Dec 12, 2023</span>
+                    </div>
+                    <div class="project-body">
                         <h3>Intelligent HR Search (RAG)</h3>
-                        <p>RAG system using Azure OpenAI (GPT-4) and LangChain to query HR policies instantly.</p>
-                        <div class="project-tags">
-                            <span>RAG</span>
-                            <span>OpenAI</span>
-                            <span>LangChain</span>
-                        </div>
-                        <a href="#" class="btn btn-outline btn-sm">View Case Study</a>
+                        <p>Retrieval-Augmented Generation system for semantic search and queries over internal HR
+                            documents.</p>
+                        <a href="#" class="card-link">Click here to see project <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="project-card">
-                    <img src="assets/project-failure.png" alt="Failure Prediction IoT" class="project-img">
-                    <div class="project-content">
-                        <h3>Real-time Failure Prediction</h3>
-                        <p>IoT sensor data processing and predictive maintenance using XGBoost on Azure Databricks.</p>
-                        <div class="project-tags">
-                            <span>Databricks</span>
-                            <span>IoT</span>
-                            <span>XGBoost</span>
-                        </div>
-                        <a href="#" class="btn btn-outline btn-sm">View Case Study</a>
-                    </div>
-                </div>
+
+                <!-- Project 3 -->
+                <!-- Project 3 -->
+
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <p style="font-size: 1.2rem; color: var(--gray-300); margin-bottom: 2rem;">
-                        I'm always open for discussions on new projects, creative ideas or opportunities to be part of
-                        your visions.
-                    </p>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h4>Email Me</h4>
-                            <p class="text-muted">shanugam.gow@gmail.com</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <h4>Location</h4>
-                            <p class="text-muted">Available for Remote Work</p>
-                        </div>
-                    </div>
+    <!-- Contact Section / Compact Footer -->
+    <section id="contact" class="footer-section">
+        <div class="container footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Shanmugam</h3>
+                    <p>Based in India. Available for remote work.</p>
                 </div>
-
-                <!-- Simple form placeholder -->
-                <form id="contact-form" style="flex: 1;">
-                    <div style="margin-bottom: 1rem;">
-                        <input type="text" id="name" placeholder="Name" required
-                            style="width: 100%; padding: 1rem; background: var(--bg-tertiary); border: 1px solid #333; color: white; border-radius: 4px;">
-                    </div>
-                    <div style="margin-bottom: 1rem;">
-                        <input type="email" id="email" placeholder="Email" required
-                            style="width: 100%; padding: 1rem; background: var(--bg-tertiary); border: 1px solid #333; color: white; border-radius: 4px;">
-                    </div>
-                    <div style="margin-bottom: 1rem;">
-                        <textarea id="message" placeholder="Message" rows="5" required
-                            style="width: 100%; padding: 1rem; background: var(--bg-tertiary); border: 1px solid #333; color: white; border-radius: 4px;"></textarea>
-                    </div>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/shanmugam31" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/shan31" target="_blank">GitHub</a>
+                    <a href="mailto:shanugam.gow@gmail.com" id="email-link">Email</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="current-year">2024</span> Shanmugam. All rights reserved.</p>
             </div>
         </div>
     </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; <span id="current-year"></span> Shanmugam | Let's build something amazing together</p>
-        </div>
-    </footer>
 
     <script src="js/script.js"></script>
 </body>

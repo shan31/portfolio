@@ -169,4 +169,60 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
         });
     }
+
+    // Project Filtering Logic
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    if (filterBtns.length > 0 && projectCards.length > 0) {
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filterValue === 'all' || filterValue === category) {
+                        card.style.display = 'flex';
+                        // Add fade in animation
+                        card.animate([
+                            { opacity: 0, transform: 'translateY(10px)' },
+                            { opacity: 1, transform: 'translateY(0)' }
+                        ], {
+                            duration: 300,
+                            easing: 'ease-out'
+                        });
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+            // Email Copy to Clipboard
+            const emailLink = document.getElementById('email-link');
+            if (emailLink) {
+                emailLink.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const email = this.getAttribute('href').replace('mailto:', '');
+
+                    navigator.clipboard.writeText(email).then(() => {
+                        // Visual feedback
+                        const originalText = this.innerText;
+                        this.innerText = 'Copied!';
+                        this.style.color = '#00ff66'; // Success green
+
+                        setTimeout(() => {
+                            this.innerText = originalText;
+                            this.style.color = '';
+                        }, 2000);
+                    }).catch(err => {
+                        console.error('Failed to copy email:', err);
+                    });
+                });
+            }
+        });
+    }
 });
